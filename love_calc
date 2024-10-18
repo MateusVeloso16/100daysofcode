@@ -1,0 +1,29 @@
+def calculate_love_score(first_name, second_name):
+    both_names = first_name + second_name
+    count_t_numbers = both_names.lower().count("t")
+    print(count_t_numbers)
+    count_r_numbers = both_names.lower().count("r")
+    print(count_r_numbers)
+    count_u_numbers = both_names.lower().count("u")
+    print(count_u_numbers)
+    count_e_numbers = both_names.lower().count("e")
+    print(count_e_numbers)
+    count_l_numbers = both_names.lower().count("l")
+    print(count_l_numbers)
+    count_o_numbers = both_names.lower().count("o")
+    print(count_o_numbers)
+    count_v_numbers = both_names.lower().count("v")
+    print(count_v_numbers)
+    first_digit = str(count_t_numbers + count_r_numbers + count_u_numbers + count_e_numbers)
+    second_digit = str(count_l_numbers + count_o_numbers + count_v_numbers)
+    two_digit_number = first_digit + second_digit
+    print(two_digit_number)
+    two_digit_number_int = int(two_digit_number)
+    if two_digit_number_int >= 50:
+        print("True Love!")
+    else:
+        print("You have to work on your love!")
+
+first_name = str(input("Insert full name for first person: "))
+second_name = str(input("Insert full name for second person: "))
+calculate_love_score(first_name, second_name)
