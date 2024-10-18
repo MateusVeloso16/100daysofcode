@@ -1,0 +1,8 @@
+def life_in_weeks(age):
+    age_in_weeks = round((age * 365) / 7)
+    your_weeks_left = 4693 - age_in_weeks
+    print(f"You have {your_weeks_left} weeks left.")
+    print(f"You have {90 - age} years left.")
+
+age = int(input("How old are you? "))
+life_in_weeks(age)
